@@ -6,7 +6,8 @@ const UISelectors = {
 	phone: document.querySelector('#phone'),
 	message: document.querySelector('.message'),
 	slider: document.querySelector('#slider'),
-	modal: document.querySelector('.modal')
+	modal: document.querySelector('.modal'),
+	button: document.querySelector('#request')
 };
 // * class for making http requests
 class Request {
@@ -71,7 +72,12 @@ form.addEventListener('submit', async function(e) {
 		return (UISelectors.message.textContent = 'All Fields are required');
 	}
 
-	const response = await request.post('/join', data);
+	const response = await request.post(
+		'https://app-ourclassroom.herokuapp.com/join',
+		data
+	);
+	UISelectors.button.value = 'Loading...';
+	UISelectors.button.setAttribute('disabled', 'true');
 	UISelectors.message.textContent = '';
 	clearFormFields();
 	UISelectors.modal.innerHTML = `
