@@ -71,12 +71,13 @@ form.addEventListener('submit', async function(e) {
 		return (UISelectors.message.textContent = 'All Fields are required');
 	}
 
-	await request.post('/join', data);
+	const response = await request.post('/join', data);
 	UISelectors.message.textContent = '';
 	clearFormFields();
 	UISelectors.modal.innerHTML = `
-	<h1 style="text-align:center">Thank you for joining us</h1>
+	<h1 style="text-align:center">Thank you for joining us.</h1>
 	<h4 style="margin: 1rem; text-align:center">Happy Coding!</h4>
+	<p style="margin: 1rem; text-align:center">You will receive a notification email from us shortly.</P>
 	<object data="./images/undraw_code_typing_7jnv.svg" type="image/svg+xml" width="605px"
 	height="462px" style="margin-top: 3rem;"></object>
 	`;
