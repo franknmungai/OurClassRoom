@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="./css/style.css" />
+	<script src="https://kit.fontawesome.com/cf11aada6e.js"></script>
+	<link rel="stylesheet" media="screen and (max-width: 768px)" href="./css/mobile.css" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<title>Our ClassRoom | Real-time ClassRoom</title>
+</head>
+
+<body>
+	<header>
+		<div class="modal p-3">
+			<div class="heading">
+				<a id="back" href="#" class="btn-back"><i class="fas fa-arrow-left"></i>Back</a>
+				<h2>
+					OurClassRoom is a self learning program lead by students who are
+					passionate Web developers at Moi University
+				</h2>
+			</div>
+			<p>
+				Ready to take the next step to becoming an accomplished web developer?
+				This is the best place to get started. We'll take you through
+				JavaScript and all you need to know <br />
+				to build your front end apps. We will guide through the basics to the
+				more advanced concepts, and you'll be confident to write your own
+				code. All modern ES6+ features are included. What you'll learn includes:
+			</p>
+			<br />
+			<div class="list-content">
+				<ul>
+					<li>
+						<h4>An Introduction to JS</h4>
+						<div>
+							<ul>
+								<li>Basic syntax</li>
+								<li>Variables</li>
+								<li>Functions</li>
+								<li>Arrays and Objects</li>
+								<li>Loops and conditionals</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<h4>Working with the Document Object Model</h4>
+						<div>
+							<ul>
+								<li>DOM Manpulation</li>
+								<li>Event Handling</li>
+								<li>Make your own simple calculator in JS</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<h4>Object Oriented Programming in JS</h4>
+						<div>
+							<ul>
+								<li>Working with Objects</li>
+								<li>Prototypal Inheritance</li>
+								<li>ES6 Classes</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<h4>Asynchronous Programming</h4>
+
+						<div>
+							<ul>
+								<li>Creating and working with callbacks</li>
+								<li>Promises</li>
+								<li>Async / Await</li>
+								<li>The Fetch API</li>
+								<li>Create a weather app</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<h4>A deep dive</h4>
+
+						<div>
+							<ul>
+								<li>Regular Expressions</li>
+								<li>Understanding closures</li>
+								<li>JavaScript design patterns</li>
+								<li>ES6 Modules, working with Babel and Webpack</li>
+								<li>Version control with Git and using Github</li>
+								<li>Deployment concepts</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<nav id="main-nav">
+			<h3 class="brand"><a href="/">OurClassRoom</a></h3>
+			<ul>
+				<li>
+					<a href="#" id="slider" class="btn btn-primary">What's OurClassRoom ?</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main class="container">
+		<section id="showcase">
+			<object data="./images/undraw_code_review_l1q9.svg" type="image/svg+xml" width="605px"
+				height="462px"></object>
+			<div class="showcase-content">
+				<p>
+					Join now to learn Web development and start your journey to becoming
+					a fullstack developer.
+				</p>
+			</div>
+		</section>
+		<section id="form-container">
+			<form id="form">
+				<div class="form-group">
+					<input type="text" name="firstName" id="firstName" placeholder="First Name" />
+				</div>
+				<div class="form-group">
+					<input type="text" name="lastName" id="lastName" placeholder="Last Name" />
+				</div>
+				<div class="form-group">
+					<input type="email" name="email" id="email" placeholder="Email" />
+				</div>
+				<div class="form-group">
+					<input type="number" name="phone" id="phone" placeholder="Phone Number" />
+				</div>
+				<input type="submit" value="Get Started" class="btn btn-grad text-primary" />
+				<div class="message text-center"></div>
+			</form>
+		</section>
+	</main>
+	<script src="/js/app.js"></script>
+</body>
+
+</html>

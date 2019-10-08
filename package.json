@@ -1,0 +1,25 @@
+{
+	"name": "our-classroom",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node src/index.js",
+		"dev": " env-cmd -f ./config/dev.env nodemon src/index.js -e js,hbs"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@sendgrid/mail": "^6.4.0",
+		"env-cmd": "^10.0.1",
+		"express": "^4.17.1",
+		"handlebars": "^4.4.2",
+		"hbs": "^4.0.5",
+		"mongoose": "^5.7.3",
+		"validator": "^11.1.0"
+	},
+	"devDependencies": {
+		"nodemon": "^1.19.3"
+	}
+}
