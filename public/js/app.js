@@ -77,7 +77,7 @@ form.addEventListener('submit', async function(e) {
 		data
 	);
 	UISelectors.button.value = 'Loading...';
-	UISelectors.button.setAttribute('disabled', 'true');
+	UISelectors.button.setAttribute('disabled', true);
 	UISelectors.message.textContent = '';
 	clearFormFields();
 	UISelectors.modal.innerHTML = `
