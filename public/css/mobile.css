@@ -54,3 +54,11 @@ object {
 	/* margin-right: 3rem; */
 	justify-self: center;
 }
+
+/* * for smaller devices... iPhone 5 */
+@media (max-width: 500px) {
+	#slider {
+		padding: 0.45rem 0.9rem;
+		font-size: 12px;
+	}
+}

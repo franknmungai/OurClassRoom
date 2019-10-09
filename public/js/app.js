@@ -76,7 +76,10 @@ form.addEventListener('submit', async function(e) {
 	UISelectors.button.setAttribute('disabled', true);
 	UISelectors.message.textContent = '';
 
-	const response = await request.post('/join', data);
+	const response = await request.post(
+		'https://app-ourclassroom.herokuapp.com/join',
+		data
+	);
 
 	clearFormFields();
 
