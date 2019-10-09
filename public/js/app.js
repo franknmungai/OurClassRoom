@@ -72,14 +72,14 @@ form.addEventListener('submit', async function(e) {
 		return (UISelectors.message.textContent = 'All Fields are required');
 	}
 
-	const response = await request.post(
-		'https://app-ourclassroom.herokuapp.com/join',
-		data
-	);
 	UISelectors.button.value = 'Loading...';
 	UISelectors.button.setAttribute('disabled', true);
 	UISelectors.message.textContent = '';
+
+	const response = await request.post('/join', data);
+
 	clearFormFields();
+
 	UISelectors.modal.innerHTML = `
 	<h1 style="text-align:center">Thank you for joining us.</h1>
 	<h4 style="margin: 1rem; text-align:center">Happy Coding!</h4>
